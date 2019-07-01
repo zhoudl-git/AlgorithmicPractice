@@ -7,9 +7,9 @@
 
 ### 数组 - 11 道
 
-剑指Offer - 01 ：二维数组中的查找
+[剑指Offer - 01 ：二维数组中的查找](https://github.com/Bylant/AlgorithmicPractice/blob/master/algorithmic-practice/sword-for-offer/src/main/java/top/zhoudl/Offer01.java)
 
-##### 结题思路
+##### 解题思路
 
 ###### 方式一：采取了暴力搜索的方式，直接遍历了二维数组；
 
@@ -21,7 +21,11 @@
 * 如果 target 大于 temp, 则代表列数需要加一
 * 如果以上两种情况都不是，则代表找到了目标值，直接返回 true
 
-剑指Offer - 06 ：旋转数组的最小数字
+[剑指Offer - 06 ：旋转数组的最小数字](https://github.com/Bylant/AlgorithmicPractice/blob/master/algorithmic-practice/sword-for-offer/src/main/java/top/zhoudl/Offer02.java)
+
+###### 方式一：还是简单暴力的解决方法，哈哈，我对整个数组进行了排序，我真是个“人才”，人家就找个最小数，你愣是给整个数组排序了，不是闲的蛋疼吗，果然不出所料，耗时久，内存也占用不少；
+
+###### 方式二：利用了旋转数组的特性，首先非递减数组，在旋转操作之后可以看成是把原来的一个数组变成了两段有序数组，这样一来我们就可以遍历数组，然后两两比较，直到找到前一个值大于后一个值得情况下，返回后一个值，这个值则必然是数组旋转之前的最小值。
 
 剑指Offer - 13 ：调整数组顺序使奇数位于偶数前面
 
