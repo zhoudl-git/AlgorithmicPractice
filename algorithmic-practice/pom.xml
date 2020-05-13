@@ -11,6 +11,7 @@
     <modules>
         <module>sword-for-offer</module>
         <module>leetcode</module>
+        <module>geekbang-algo</module>
     </modules>
 
     <name>algorithmic-practice</name>
